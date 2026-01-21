@@ -1,0 +1,40 @@
+@import "./variables";
+
+.header {
+  align-items: center;
+  background-color: $headerBackground;
+  background: $headerBackgroundGradient;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px 0;
+
+  &__image {
+    border: 1px solid gold;
+    height: 44;
+    margin-right: 5px;
+    width: 44px;
+  }
+
+  &__logo {
+    align-items: center;
+    display: flex;
+    margin: 0 25px;
+    width: 50%;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 25px;
+    width: 50%;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-left: 30px;
+  }
+}

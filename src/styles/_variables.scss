@@ -1,0 +1,67 @@
+/* =========================
+   BACKGROUNDS
+   ========================= */
+
+$primaryBackground: rgb(15, 17, 21); // body, main background
+$secondaryBackground: rgb(22, 25, 32); // cards, sections
+$elevatedBackground: rgb(30, 34, 44); // hover, dropdowns, modals
+// HEADER
+$headerBackground: rgba(30, 34, 44, 1);
+$headerBackgroundGradient: linear-gradient(
+  90deg,
+  rgba(30, 34, 44, 1) 0%,
+  rgba(15, 17, 21, 1) 66%,
+  rgba(15, 17, 21, 1) 33%,
+  rgba(30, 34, 44, 1) 100%
+);
+// FOOTER
+$footerBackground: rgba(30, 34, 44, 1);
+$footerBackgroundGradient: linear-gradient(
+  90deg,
+  rgba(30, 34, 44, 1) 0%,
+  rgba(15, 17, 21, 1) 66%,
+  rgba(15, 17, 21, 1) 33%,
+  rgba(30, 34, 44, 1) 100%
+);
+
+/* =========================
+   TEXT COLORS
+   ========================= */
+
+$primaryText: rgb(235, 238, 244); // headings, main text
+$secondaryText: rgb(170, 176, 190); // descriptions, meta
+$mutedText: rgb(120, 126, 140); // placeholders, footer
+
+/* =========================
+   ACCENTS / BRAND
+   ========================= */
+
+$accentPrimary: rgb(255, 138, 61); // CTA, active states
+$accentSecondary: rgb(54, 214, 255); // icons, links
+$accentTertiary: rgb(163, 104, 255); // backend / GraphQL
+
+/* =========================
+   STATUS COLORS
+   ========================= */
+
+$success: rgb(60, 200, 120);
+$warning: rgb(255, 190, 92);
+$error: rgb(255, 95, 95);
+
+/* =========================
+   BORDERS & DIVIDERS
+   ========================= */
+
+$borderSubtle: rgb(40, 45, 58);
+
+/* =========================
+   GRADIENTS
+   ========================= */
+
+$gradientCTA: linear-gradient(135deg, rgb(255, 138, 61), rgb(255, 95, 109));
+
+$gradientHeroGlow: radial-gradient(
+  circle at top,
+  rgba(54, 214, 255, 0.25),
+  transparent 60%
+);
