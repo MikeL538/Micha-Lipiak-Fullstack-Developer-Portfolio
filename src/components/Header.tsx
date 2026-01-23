@@ -8,7 +8,7 @@ export default function Header() {
         {/* Lewa strona: Pic / nazwa */}
         <div className="header__logo">
           <img className="header__image" src="./" />
-          Michał Lipiak
+          <h3 className="header__name">Michał Lipiak</h3>
         </div>
         {/* Prawa strona: nawigacja */}
         <nav className="header__nav">
@@ -85,11 +85,11 @@ export default function Header() {
       >
         <defs>
           <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="rgb(33, 37, 47)" />
-            <stop offset="25%" stopColor="rgba(25,25,31,1)" />
-            <stop offset="50%" stopColor="rgba(15,17,21,1)" />
-            <stop offset="75%" stopColor="rgba(25,25,31,1)" />
-            <stop offset="100%" stopColor="rgb(33, 37, 47)" />
+            <stop offset="0%" stopColor="rgb(12, 15, 21)" />
+            <stop offset="30%" stopColor="rgb(20, 24, 31)" />
+            <stop offset="50%" stopColor="rgb(28, 32, 44)" />
+            <stop offset="70%" stopColor="rgb(20, 24, 31)" />
+            <stop offset="100%" stopColor="rgb(12, 15, 21)" />
           </linearGradient>
         </defs>
 

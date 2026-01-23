@@ -1,45 +1,127 @@
-.home {
-  display: flex;
-  flex-direction: column;
-  margin: 30px;
-  min-height: calc(100vh - 8vw);
-  text-align: center;
+@use "./variables" as vars;
 
-  &__skills {
-    &-title {
-      margin: 100px 0 25px 0;
-    }
+.home__hero {
+  background: vars.$homeHeroBackgroundGradient;
 
-    &-list {
+  &__title {
+    margin-bottom: 35px;
+    font-size: clamp(2.6rem, 6vw, 4rem);
+
+    text-align: center;
+  }
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-p {
+    width: 550px;
+    margin: 35px;
+    text-align: justify;
+  }
+}
+
+.home__skills {
+  &__container {
+    background: vars.$homeSkillsBackground;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 900px;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 0 auto;
+    align-items: center;
+
+    > li {
+      background: vars.$card-bg;
+      border-radius: 12px;
+      width: 125px;
+      min-height: 125px;
+      padding: 15px 0;
+      align-items: center;
+      justify-content: center;
       display: flex;
-      justify-content: space-around;
+      flex-direction: column;
 
-      > li {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+
+      box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.02);
+
+      transition: all 0.25s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow:
+          0 20px 40px rgba(0, 0, 0, 0.5),
+          inset 0 1px 0 rgba(255, 255, 255, 0.04);
       }
     }
   }
+}
 
-  &__projects {
-    &__container {
-      margin-top: 100px;
-    }
+.home__projects {
+  background: vars.$homeProjectsBackgroundGradient;
 
-    &__list {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+  &__container {
+    max-width: calc(1280px + 2rem);
+    margin: 0 auto 75px auto;
+  }
 
-    &__item {
-      align-items: center;
-      display: flex;
-      margin: 35px;
-      max-width: 444px;
-      width: 100%;
+  &__title {
+    margin-bottom: 25px;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  &__list {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+  }
+
+  &__item {
+    align-items: center;
+    display: flex;
+    text-align: justify;
+    max-width: 444px;
+    width: 100%;
+
+    background: vars.$card-bg;
+    border-radius: 16px;
+    padding: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.04);
+
+    box-shadow:
+      0 10px 30px rgba(0, 0, 0, 0.35),
+      inset 0 1px 0 rgba(255, 255, 255, 0.02);
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
     }
   }
 }
@@ -47,8 +129,8 @@
 .placeholder {
   &__skill-image {
     border: 1px solid gold;
-    height: 66px;
-    width: 66px;
+    height: 75px;
+    width: 75px;
   }
 
   &__projects__image {
@@ -56,5 +138,11 @@
     height: 150px;
     margin: 15px;
     width: 100%;
+  }
+
+  &__home__hero__image {
+    width: 300px;
+    height: 300px;
+    border: 1px solid gold;
   }
 }

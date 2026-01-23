@@ -1,7 +1,7 @@
 @use "header";
 @use "footer";
 @use "home";
-@import "variables";
+@use "./variables" as vars;
 
 * {
   box-sizing: border-box;
@@ -13,11 +13,12 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 16px;
 
-  color-scheme: light dark;
-  color: #eee;
-  background-color: #0f1115;
-  background: $bodyBackgroundGradient;
+  // color-scheme: light dark;
+  color: vars.$text-primary;
+  background-color: vars.$bg-900;
+  background: vars.$bodyBackground;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -27,11 +28,13 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: vars.$button;
   text-decoration: inherit;
+  transition: background-color 0.25s;
 }
+
 a:hover {
-  color: #535bf2;
+  color: vars.$buttonHover;
 }
 
 body {
@@ -39,12 +42,26 @@ body {
   place-items: center;
   margin: 0 auto;
   min-width: 320px;
-  min-height: 100vh;
+  // min-height: 100vh;
 }
+
+section {
+  padding: 60px 0;
+}
+
+// .layout__main {
+//   border-left: 1px solid red;
+//   border-right: 1px solid red;
+// }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+ul,
+ol {
+  list-style-type: none;
 }
 
 button {
@@ -54,47 +71,44 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: vars.$button;
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
-  border-color: #646cff;
+  border-color: vars.$buttonHover;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+// @media (prefers-color-scheme: light) {
+//   :root {
+//     color: #213547;
+//     background-color: #ffffff;
+//   }
+//   a:hover {
+//     color: #747bff;
+//   }
+//   button {
+//     background-color: #f9f9f9;
+//   }
+// }
 
-/* =========== */
+/* ===== TESTY ====== */
 
-.test {
-  width: 300px;
-  height: 50px;
-  background-color: red;
-}
+#cursor-light {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
 
-ul,
-ol {
-  list-style-type: none;
-}
-
-.layout {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  background: radial-gradient(
+    200px circle at var(--x) var(--y),
+    rgba(120, 140, 255, 0.06),
+    transparent 50%
+  );
 }

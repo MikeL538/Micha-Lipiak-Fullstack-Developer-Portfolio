@@ -1,8 +1,8 @@
 export default function HomeSkills() {
   return (
-    <div className="home__skills-container">
-      <h2 className="home__skills-title">Skills</h2>
-      <ul className="home__skills-list">
+    <section className="home__skills__container">
+      <h2 className="home__skills__title">Skills</h2>
+      <ul className="home__skills__list">
         <li>
           <img className="placeholder__skill-image" />
           HTML
@@ -47,7 +47,11 @@ export default function HomeSkills() {
           <img className="placeholder__skill-image" />
           Git / Github
         </li>
+        <li>
+          <img className="placeholder__skill-image" />
+          Git / Github
+        </li>
       </ul>
-    </div>
+    </section>
   );
 }

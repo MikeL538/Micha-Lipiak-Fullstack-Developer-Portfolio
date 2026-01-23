@@ -1,79 +1,89 @@
-/* =========================
-   BACKGROUNDS
-   ========================= */
+/* =========================================================
+   CORE PALETTE
+   ========================================================= */
 
-$primaryBackground: rgb(15, 17, 21); // body, main background
-$secondaryBackground: rgb(22, 25, 32); // cards, sections
-$elevatedBackground: rgb(30, 34, 44); // hover, dropdowns, modals
-// HEADER
-$headerBackground: rgba(30, 34, 44, 1);
+$bg-900: rgb(15, 17, 21); // najciemniejszy (body core)
+$bg-850: rgb(18, 21, 27); // body / main sections
+$bg-800: rgb(22, 25, 31); // sections / transitions
+$bg-750: rgb(30, 34, 44); // header / footer base
+
+$text-primary: rgb(235, 237, 240);
+$text-secondary: rgb(180, 185, 195);
+$text-muted: rgb(140, 145, 155);
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+$headerBackground: $bg-750;
 $headerBackgroundGradient: linear-gradient(
   90deg,
-  rgba(30, 34, 44, 1) 0%,
-  rgba(22, 25, 31, 1) 25%,
-
-  rgba(15, 17, 21, 1) 50%,
-  rgba(22, 25, 31, 1) 75%,
-
-  rgba(30, 34, 44, 1) 100%
+  $bg-900 0%,
+  $bg-800 30%,
+  $bg-750 50%,
+  $bg-800 70%,
+  $bg-900 100%
 );
-// BODY
+
+/* =========================================================
+   BODY / MAIN
+   ========================================================= */
+
+$bodyBackground: $bg-900;
 $bodyBackgroundGradient: linear-gradient(
   180deg,
-  rgba(18, 21, 27, 1) 0%,
-  rgba(15, 17, 21, 1) 25%,
-  rgba(15, 17, 21, 1) 75%,
-  rgba(18, 21, 27, 1) 100%
+  $bg-850 0%,
+  $bg-900 30%,
+  $bg-900 70%,
+  $bg-850 100%
 );
 
-// FOOTER
-$footerBackground: rgba(30, 34, 44, 1);
+$card-bg: rgba(255, 255, 255, 0.02);
+
+$text: $text-primary;
+
+/* =========================================================
+   HOME – SECTIONS
+   ========================================================= */
+
+$homeHeroBackgroundGradient: linear-gradient(
+  180deg,
+  rgb(26, 30, 38) 0%,
+  rgb(15, 17, 21) 100%
+);
+
+/* Skills */
+$homeSkillsBackground: rgb(15, 17, 21);
+
+/* Projects */
+$homeProjectsBackgroundGradient: linear-gradient(
+  180deg,
+  rgb(15, 17, 21) 0%,
+  rgb(22, 25, 31) 100%
+);
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+$footerBackground: $bg-750;
 $footerBackgroundGradient: linear-gradient(
   90deg,
-  rgba(30, 34, 44, 1) 0%,
-  rgba(15, 17, 21, 1) 66%,
-  rgba(15, 17, 21, 1) 33%,
-  rgba(30, 34, 44, 1) 100%
+  $bg-900 0%,
+  $bg-800 30%,
+  $bg-750 50%,
+  $bg-800 70%,
+  $bg-900 100%
 );
 
-/* =========================
-   TEXT COLORS
-   ========================= */
+/* =========================================================
+   ACCENT / INTERACTIONS
+   ========================================================= */
 
-$primaryText: rgb(235, 238, 244); // headings, main text
-$secondaryText: rgb(170, 176, 190); // descriptions, meta
-$mutedText: rgb(120, 126, 140); // placeholders, footer
+$accent-primary: rgb(79, 140, 255); // links / active
+$accent-hover: rgb(120, 170, 255); // hover
+$accent-soft: rgb(160, 200, 255); // subtle highlights
 
-/* =========================
-   ACCENTS / BRAND
-   ========================= */
-
-$accentPrimary: rgb(255, 138, 61); // CTA, active states
-$accentSecondary: rgb(54, 214, 255); // icons, links
-$accentTertiary: rgb(163, 104, 255); // backend / GraphQL
-
-/* =========================
-   STATUS COLORS
-   ========================= */
-
-$success: rgb(60, 200, 120);
-$warning: rgb(255, 190, 92);
-$error: rgb(255, 95, 95);
-
-/* =========================
-   BORDERS & DIVIDERS
-   ========================= */
-
-$borderSubtle: rgb(40, 45, 58);
-
-/* =========================
-   GRADIENTS
-   ========================= */
-
-$gradientCTA: linear-gradient(135deg, rgb(255, 138, 61), rgb(255, 95, 109));
-
-$gradientHeroGlow: radial-gradient(
-  circle at top,
-  rgba(54, 214, 255, 0.25),
-  transparent 60%
-);
+/* Buttons */
+$button: $accent-primary;
+$buttonHover: $accent-hover;
