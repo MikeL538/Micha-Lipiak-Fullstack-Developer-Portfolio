@@ -75,7 +75,6 @@
     }
   }
   &-image {
-    // border: 1px solid gold;
     height: 75px;
     width: 75px;
   }
@@ -101,19 +100,15 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 35px;
-    // padding: 10px;
-
-    &-container {
-      padding: 10px;
-    }
   }
 
   &__item {
     align-items: center;
     display: flex;
+    flex-direction: column;
+    height: 444px;
+    width: 444px;
     text-align: justify;
-    max-width: 444px;
-    width: 100%;
 
     background: vars.$card-bg;
     border-radius: 16px;
@@ -124,7 +119,6 @@
       0 10px 30px rgba(0, 0, 0, 0.35),
       inset 0 1px 0 rgba(255, 255, 255, 0.02);
 
-    // cursor: pointer;
     transition: all 0.25s ease;
 
     &:hover {
@@ -136,30 +130,48 @@
   }
 
   &__image {
-    height: 150px;
-    margin: 15px;
-    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 217px;
+    opacity: 0.6;
+    width: 444px;
+    border-bottom: 4px solid vars.$bg-750;
+
+    &:hover {
+      cursor: zoom-in;
+    }
+  }
+
+  &__list-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    margin: 5px;
   }
 
   &__links-container {
-    margin-top: 25px;
     display: flex;
     justify-content: end;
   }
 
   &__description {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    // height: 100%;
   }
 
   &__list-tech {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 5px;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 12px;
+    // background: vars.$headerBackgroundGradient;
+    // border-top: 1px solid gold;
+    // border-bottom: 1px solid gold;
   }
 
   &__links {
-    margin-right: 15px;
+    margin: 5px;
 
     &-svg {
       height: 26px;
@@ -170,8 +182,8 @@
 
 .placeholder {
   &__home__hero__image {
-    width: 300px;
-    height: 300px;
     border: 1px solid gold;
+    height: 300px;
+    width: 300px;
   }
 }

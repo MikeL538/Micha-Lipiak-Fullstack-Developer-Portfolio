@@ -12,15 +12,16 @@ export default function HomeProjects() {
           {projectsJson.map((project) => (
             <li className="home__projects__item">
               <img
-                key={project.id}
-                src={project.image}
                 className="home__projects__image"
+                src={project.image}
+                alt={project.title}
               />
               <div className="home__projects__list-container">
                 <h3 className="home__projects__name">{project.title}</h3>
                 <p className="home__projects__description">
                   {project.description}
                 </p>
+
                 <ul className="home__projects__list-tech">
                   {project.tech.map((tech) => (
                     <li key={tech}>{tech} </li>
