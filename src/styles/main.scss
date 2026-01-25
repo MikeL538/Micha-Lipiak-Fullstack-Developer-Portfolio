@@ -1,6 +1,7 @@
 @use "header";
 @use "footer";
 @use "home";
+@use "imageModal";
 @use "./variables" as vars;
 
 * {
@@ -17,13 +18,18 @@
 
   // color-scheme: light dark;
   color: vars.$text-primary;
-  background-color: vars.$bg-900;
-  background: vars.$bodyBackground;
+
+  background-color: vars.$bodyBackground;
+  background: vars.$homeHeroBackgroundGradient;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
 }
 
 a {
@@ -38,21 +44,27 @@ a:hover {
 }
 
 body {
-  margin: 0;
   place-items: center;
   margin: 0 auto;
   min-width: 320px;
-  // min-height: 100vh;
+  position: relative;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: vars.$homeHeroBackgroundGradient;
 }
 
 section {
   padding: 60px 0;
 }
-
-// .layout__main {
-//   border-left: 1px solid red;
-//   border-right: 1px solid red;
-// }
 
 h1 {
   font-size: 3.2em;
@@ -85,6 +97,19 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+#cursor-light {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+
+  background: radial-gradient(
+    200px circle at var(--x) var(--y),
+    rgba(120, 140, 255, 0.06),
+    transparent 50%
+  );
+}
+
 // @media (prefers-color-scheme: light) {
 //   :root {
 //     color: #213547;
@@ -100,15 +125,7 @@ button:focus-visible {
 
 /* ===== TESTY ====== */
 
-#cursor-light {
-  position: fixed;
-  inset: 0;
+.is-hidden {
+  opacity: 0;
   pointer-events: none;
-  z-index: 1;
-
-  background: radial-gradient(
-    200px circle at var(--x) var(--y),
-    rgba(120, 140, 255, 0.06),
-    transparent 50%
-  );
 }

@@ -15,6 +15,7 @@ export default function HomeProjects() {
                 className="home__projects__image"
                 src={project.image}
                 alt={project.title}
+                data-set={project.id}
               />
               <div className="home__projects__list-container">
                 <h3 className="home__projects__name">{project.title}</h3>
@@ -24,7 +25,7 @@ export default function HomeProjects() {
 
                 <ul className="home__projects__list-tech">
                   {project.tech.map((tech) => (
-                    <li key={tech}>{tech} </li>
+                    <li key={tech}>{tech}</li>
                   ))}
                 </ul>
                 <div className="home__projects__links-container">

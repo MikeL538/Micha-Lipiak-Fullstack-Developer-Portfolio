@@ -1,8 +1,6 @@
 @use "./variables" as vars;
 
 .home__hero {
-  background: vars.$homeHeroBackgroundGradient;
-
   &__title {
     margin-bottom: 35px;
     font-size: clamp(2.6rem, 6vw, 4rem);
@@ -26,10 +24,6 @@
 }
 
 .home__skills {
-  &__container {
-    background: vars.$homeSkillsBackground;
-  }
-
   &__title {
     margin-bottom: 25px;
     font-size: 3rem;
@@ -81,8 +75,6 @@
 }
 
 .home__projects {
-  background: vars.$homeProjectsBackgroundGradient;
-
   &__container {
     max-width: calc(1280px + 2rem);
     margin: 0 auto 75px auto;
@@ -135,7 +127,7 @@
     height: 217px;
     opacity: 0.6;
     width: 444px;
-    border-bottom: 4px solid vars.$bg-750;
+    border-bottom: 4px solid vars.$accent-soft;
 
     &:hover {
       cursor: zoom-in;
@@ -157,17 +149,19 @@
 
   &__description {
     margin-bottom: 5px;
-    // height: 100%;
   }
 
   &__list-tech {
     display: flex;
     gap: 15px;
     justify-content: center;
-    margin-bottom: 12px;
-    // background: vars.$headerBackgroundGradient;
-    // border-top: 1px solid gold;
-    // border-bottom: 1px solid gold;
+    margin-top: 6px;
+
+    > li {
+      border: 1px solid vars.$accent-soft;
+      border-radius: 10%;
+      padding: 5px;
+    }
   }
 
   &__links {

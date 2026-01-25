@@ -14,12 +14,11 @@ export default function MainLayout({ children }: MainLayoutProps) {
   return (
     <>
       <div id="cursor-light" />
+
       <div className="layout">
         <Header />
-
         {/* Główna treść strony */}
         <main className="layout__main">{children}</main>
-
         <Footer />
       </div>
     </>
