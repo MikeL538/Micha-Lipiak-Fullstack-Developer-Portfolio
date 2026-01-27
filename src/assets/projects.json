@@ -1,6 +1,6 @@
 [
   {
-    "id": 5,
+    "id": 4,
     "title": "Raport Generator V2",
     "description": "Raport Generator V2 to aplikacja webowa służąca do szybkiego tworzenia raportów z próbnych egzaminów maturalnych.",
     "tech": ["HTML", "SCSS", "JavaScript"],
@@ -11,47 +11,47 @@
     "featured": true
   },
   {
-    "id": 4,
+    "id": 3,
     "title": "Formularz Zjazd SLO",
     "description": "Strona-formularz służąca do zapisu na zjazd absolwentów Społecznego Liceum w Żarach. Jedna strona jest publiczna i służy zapisom przechowywanym w Supabase, druga służy odczytowi danych.",
     "tech": ["HTML", "SCSS", "Supabase", "JavaScript"],
     "image": "/projects/ZjazdAbsolwentowSLO.jpg",
-    "imageLarge": "/projects/RaportGeneratorV2.jpg",
+    "imageLarge": "/projects/ZjazdAbsolwentowSLO.jpg",
     "github": "https://github.com/MikeL538/Zaproszenie-Zjazd-SLO",
     "live": "https://mikel538.github.io/Zaproszenie-Zjazd-SLO/",
     "featured": true
   },
   {
-    "id": 3,
+    "id": 2,
     "title": "Filmoteka",
     "description": "Strona przedstawia wyszukiwarkę filmów, która prezentuje ranking filmów oraz popularne ostatnio filmy, umożliwia użytkownikowi znalezienie konkretnego filmu. Wyświetlane są informacje o filmie, takie jak opis czy oceny.",
     "tech": ["React", "Node.js", "WebSocket"],
     "image": "/projects/Filmoteka.jpg",
-    "imageLarge": "/projects/FilmotekaLarge.jpg",
-    "github": "https://github.com/username/chatapp",
-    "live": "https://chat.example.com",
-    "featured": true
-  },
-  {
-    "id": 2,
-    "title": "Task Manager",
-    "description": "Task manager app with authentication and drag-and-drop features.",
-    "tech": ["React", "TypeScript", "Supabase"],
-    "image": "/images/projects/taskmanager.png",
-    "imageLarge": "/projects/RaportGeneratorV2.jpg",
-    "github": "https://github.com/username/taskmanager",
-    "live": "https://tasks.example.com",
+    "imageLarge": "/projects/Filmoteka.jpg",
+    "github": "https://github.com/MikeL538/Filmoteka",
+    "live": "https://mikel538.github.io/Filmoteka/",
     "featured": true
   },
   {
     "id": 1,
-    "title": "Blog Platform",
-    "description": "Blog platform with markdown support and user authentication.",
-    "tech": ["Next.js", "TailwindCSS", "PostgreSQL"],
-    "image": "/images/projects/blog.png",
-    "imageLarge": "/projects/RaportGeneratorV2.jpg",
-    "github": "https://github.com/username/blog",
-    "live": "https://blog.example.com",
+    "title": "Lorem",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, praesentium omnis! Hic magni incidunt eius?",
+    "tech": ["React", "TypeScript", "Supabase"],
+    "image": "/projects/Filmoteka.jpg",
+    "imageLarge": "/projects/Filmoteka.jpg",
+    "github": "",
+    "live": "",
+    "featured": true
+  },
+  {
+    "id": 0,
+    "title": "Lorem",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, praesentium omnis! Hic magni incidunt eius?",
+    "tech": ["React", "TypeScript", "Supabase"],
+    "image": "/projects/Filmoteka.jpg",
+    "imageLarge": "/projects/Filmoteka.jpg",
+    "github": "",
+    "live": "",
     "featured": false
   }
 ]

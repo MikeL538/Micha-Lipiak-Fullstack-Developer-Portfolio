@@ -5,10 +5,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  top: 0%;
+  left: 0%;
 
   &__container {
     max-width: 1200px;
-    max-height: 600px;
+
     width: 100%;
   }
 

@@ -1,0 +1,112 @@
+@use "./variables" as vars;
+
+.projects {
+  margin: 0 auto;
+  display: flex;
+
+  &__container {
+    max-width: calc(1280px + 2rem);
+    margin: 0 auto 75px auto;
+  }
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    // height: 400px;
+
+    background: vars.$card-bg;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    box-shadow:
+      0 10px 30px rgba(0, 0, 0, 0.35),
+      inset 0 1px 0 rgba(255, 255, 255, 0.02);
+    transition: all 0.25s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    }
+  }
+
+  &__list-container {
+    display: flex;
+    gap: 25px;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  &__image {
+    height: 300px;
+    width: 550px;
+    opacity: 0.9;
+    border-radius: 16px;
+    border: 2px solid vars.$accent-soft;
+
+    box-shadow:
+      0 10px 30px rgba(0, 0, 0, 0.35),
+      inset 0 1px 0 rgba(255, 255, 255, 0.02);
+
+    transition: all 0.25s ease;
+
+    &:hover {
+      cursor: zoom-in;
+    }
+  }
+
+  &__list-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__name {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    margin-bottom: 22px;
+    width: 700px;
+  }
+
+  &__list-tech {
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+    margin-right: 25px;
+
+    > li {
+      border: 1px solid vars.$accent-soft;
+      border-radius: 10%;
+      padding: 5px;
+    }
+  }
+
+  &__links-container {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__links {
+    margin: 5px;
+
+    &-svg {
+      height: 32px;
+      width: 32px;
+    }
+  }
+}

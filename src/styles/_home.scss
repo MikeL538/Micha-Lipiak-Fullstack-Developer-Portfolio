@@ -4,7 +4,6 @@
   &__title {
     margin-bottom: 35px;
     font-size: clamp(2.6rem, 6vw, 4rem);
-
     text-align: center;
   }
 
@@ -125,7 +124,7 @@
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     height: 217px;
-    opacity: 0.6;
+    opacity: 0.8;
     width: 444px;
     border-bottom: 4px solid vars.$accent-soft;
 
@@ -166,6 +165,7 @@
 
   &__links {
     margin: 5px;
+    height: 100%;
 
     &-svg {
       height: 26px;
