@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 export default function ImageModal({
   project,
   onClose,
@@ -33,7 +35,7 @@ export default function ImageModal({
       >
         <img
           className="imageModal__image"
-          src={project.imageLarge}
+          src={BASE_URL + project.imageLarge}
           alt={project.title}
           onClick={onClose}
         />

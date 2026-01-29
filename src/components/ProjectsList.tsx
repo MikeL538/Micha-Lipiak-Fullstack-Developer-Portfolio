@@ -1,6 +1,8 @@
 import projects from "../assets/projects.json";
 import icons from "../assets/icons.svg";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 export default function ProjectsList({
   onImageClick,
 }: {
@@ -18,7 +20,7 @@ export default function ProjectsList({
               <div className="projects__list-container">
                 <img
                   className="projects__image"
-                  src={project.image}
+                  src={BASE_URL + project.image}
                   alt={project.title}
                   onClick={() => onImageClick(project)}
                 />

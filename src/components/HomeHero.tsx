@@ -1,3 +1,5 @@
+const BASE_URL = import.meta.env.BASE_URL;
+
 export default function HomeHero() {
   return (
     <>
@@ -14,7 +16,7 @@ export default function HomeHero() {
           <div className="home__hero__image-wrapper">
             <img
               className="home__hero__image"
-              src="/images/HomeHeroImage.png"
+              src={BASE_URL + "images/HomeHeroImage.png"}
               alt="Hero image"
             />
           </div>

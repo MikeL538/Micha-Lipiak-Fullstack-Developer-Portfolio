@@ -1,6 +1,8 @@
 import projects from "../assets/projects.json";
 import icons from "../assets/icons.svg";
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 export default function HomeProjects({
   onImageClick,
 }: {
@@ -17,7 +19,7 @@ export default function HomeProjects({
             <li className="home__projects__item">
               <img
                 className="home__projects__image"
-                src={project.image}
+                src={BASE_URL + project.image}
                 key={project.id}
                 alt={project.title}
                 data-set={project.id}
