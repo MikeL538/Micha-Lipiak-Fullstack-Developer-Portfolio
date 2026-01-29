@@ -14,7 +14,8 @@ export default function HomeHero() {
           <div className="home__hero__image-wrapper">
             <img
               className="home__hero__image"
-              src="./public/images/HomeHeroImage.png"
+              src="/images/HomeHeroImage.png"
+              alt="Hero image"
             />
           </div>
         </div>

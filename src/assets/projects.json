@@ -5,7 +5,7 @@
     "description": "Jest to aplikacja webowa służąca do szybkiego tworzenia czytelnych raportów z próbnych egzaminów maturalnych. Projekt skupia się na uproszczeniu procesu generowania zestawień, poprawie czytelności danych oraz nowoczesnym interfejsie użytkownika.",
     "descriptionLong": "Jest to webowa aplikacja wspierająca proces tworzenia raportów z próbnych egzaminów maturalnych, zaprojektowana jako rozwinięcie i refaktoryzacja wcześniejszej wersji narzędzia. Głównym celem projektu było uporządkowanie logiki aplikacji, poprawa architektury kodu oraz stworzenie bardziej przejrzystego i intuicyjnego interfejsu. Aplikacja umożliwia szybkie przetwarzanie danych egzaminacyjnych i generowanie raportów w formie czytelnych zestawień, co znacząco skraca czas pracy z dokumentacją. Wersja V2 kładzie nacisk na lepszy UX, modularność kodu oraz przygotowanie solidnej bazy pod dalszy rozwój funkcjonalności. Projekt pokazuje umiejętność pracy z istniejącym kodem, refaktoryzacji oraz świadomego podejścia do struktury aplikacji frontendowej.",
     "tech": ["HTML", "SCSS", "JavaScript"],
-    "image": "/projects/RaportGeneratorV2.jpg",
+    "image": "./projects/RaportGeneratorV2.jpg",
     "imageLarge": "/projects/RaportGeneratorV2.jpg",
     "github": "https://github.com/MikeL538/raportGeneratorV2",
     "live": "https://mikel538.github.io/raportGeneratorV2/",
