@@ -1,8 +1,10 @@
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import icons from "../assets/icons.svg";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
+  const currentLang = i18n.language;
 
   return (
     // Nagłówek strony
@@ -65,8 +67,26 @@ export default function Header() {
               </NavLink>
             </li>
             <li className="header__item">
-              <button onClick={() => i18n.changeLanguage("pl")}>PL</button>
-              <button onClick={() => i18n.changeLanguage("en")}>EN</button>
+              {currentLang !== "pl" && (
+                <button
+                  className="header__button"
+                  onClick={() => i18n.changeLanguage("pl")}
+                >
+                  <svg width={32} height={32}>
+                    <use href={`${icons}#flag-pl`}></use>
+                  </svg>
+                </button>
+              )}
+              {currentLang !== "en" && (
+                <button
+                  className="header__button"
+                  onClick={() => i18n.changeLanguage("en")}
+                >
+                  <svg width={32} height={32}>
+                    <use href={`${icons}#flag-uk`}></use>
+                  </svg>
+                </button>
+              )}
             </li>
           </ul>
         </nav>
