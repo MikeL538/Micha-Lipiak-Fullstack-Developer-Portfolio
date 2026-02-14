@@ -1,0 +1,46 @@
+@use "./variables" as vars;
+
+.contact {
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    margin-right: 22px;
+    // max-width: 530px;
+    border: 4px solid vars.$accent-primary;
+    padding: 30px;
+    border-radius: 50px;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  &__list {
+    &--item {
+      margin-bottom: 22px;
+      //   transition: 3s ease-in-out;
+
+      //   &:hover > a,
+      //   &:hover > svg,
+      //   &:focus > a,
+      //   &:focus > svg {
+      //     background-color: red;
+      //     transition: 3s ease-in-out;
+      //   }
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+  }
+}
