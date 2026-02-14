@@ -11,7 +11,7 @@ export default function Footer() {
         {/* Sekcja linków społecznościowych */}
         <div className="footer__socials">
           <a
-            href="https://github.com/mikel"
+            href="https://github.com/MikeL538"
             target="_blank"
             rel="noopener noreferrer"
             className="footer__link"
@@ -19,28 +19,28 @@ export default function Footer() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/mikel"
+            href="https://www.linkedin.com/in/michal-lipiak/"
             target="_blank"
             rel="noopener noreferrer"
             className="footer__link"
           >
             LinkedIn
           </a>
-          <a
+          {/* <a
             href="https://twitter.com/mikel"
             target="_blank"
             rel="noopener noreferrer"
             className="footer__link"
           >
             WhatsApp
-          </a>
+          </a> */}
           <a
-            href="https://twitter.com/mikel"
+            href="mailto:mikel538.work@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="footer__link"
           >
-            Gmail
+            E-mail
           </a>
         </div>
       </div>
