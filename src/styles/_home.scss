@@ -195,22 +195,47 @@
 
   &__list-tech {
     display: flex;
-    gap: 15px;
     justify-content: end;
+    gap: 10px;
+    flex-wrap: wrap;
     margin: 6px 6px 0 6px;
+  }
 
-    > li {
-      border: none;
-      // padding: 3px;
-      background: none;
-      // font-size: 0.85rem;
-      // font-weight: 600;
-      // border: 2px solid vars.$tech-border;
+  &__icon-wrapper {
+    position: relative;
+    display: inline-block;
+  }
 
-      > svg {
-        width: 40px;
-        height: 40px;
-      }
+  &__icon-tech {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: vars.$transition-basic;
+
+    &:hover {
+      transform: translateY(8px);
+    }
+
+    &:hover + &--name {
+      transition: vars.$transition-basic;
+      opacity: 1;
+    }
+
+    &--name {
+      position: absolute;
+      bottom: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: vars.$transition-basic;
+      font-size: 1.2rem;
+      background-color: vars.$accent-hover;
+      padding: 4px 8px;
+      white-space: nowrap;
+      font-weight: 700;
+      border-radius: 12px;
+      text-align: center;
+      opacity: 0;
+      pointer-events: none;
     }
   }
 

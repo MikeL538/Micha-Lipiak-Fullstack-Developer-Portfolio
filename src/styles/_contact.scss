@@ -5,42 +5,58 @@
   justify-content: center;
 
   &__container {
-    margin-right: 22px;
-    // max-width: 530px;
+    margin: 60px 0;
     border: 4px solid vars.$accent-primary;
-    padding: 30px;
     border-radius: 50px;
   }
 
   &__title {
-    margin-bottom: 35px;
+    font-size: 2.5rem;
+    color: vars.$accent-primary;
+    border-bottom: 4px solid vars.$accent-primary;
+    width: 100%;
     text-align: center;
+    padding: 20px;
   }
 
   &__list {
+    padding: 25px 25px;
     &--item {
-      margin-bottom: 22px;
-      //   transition: 3s ease-in-out;
+      margin-bottom: 40px;
 
-      //   &:hover > a,
-      //   &:hover > svg,
-      //   &:focus > a,
-      //   &:focus > svg {
-      //     background-color: red;
-      //     transition: 3s ease-in-out;
-      //   }
+      &:hover .contact__link,
+      &:hover .contact__icon,
+      &:focus .contact__link,
+      &:focus .contact__icon {
+        fill: vars.$accent-hover;
+        color: vars.$accent-hover;
+      }
     }
   }
 
   &__link {
+    transition: vars.$transition-basic;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
 
   &__icon {
-    width: 32px;
-    height: 32px;
-    margin-right: 5px;
+    width: 42px;
+    height: 42px;
+    margin-right: 7px;
+    transition: vars.$transition-basic;
+
+    &--linkedin {
+      fill: #0a66c2;
+    }
+
+    &--email {
+      fill: #34a853;
+    }
+
+    &--smartphone {
+      fill: #a9a9a9;
+    }
   }
 }

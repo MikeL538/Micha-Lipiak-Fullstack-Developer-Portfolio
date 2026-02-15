@@ -11,37 +11,37 @@ export default function HomeSkills() {
         {/* Front-end podstawy */}
         <li>
           <svg className="home__skills-image">
-            <use href={`${icons}#icon-html`} />
+            <use href={`${icons}#html`} />
           </svg>
           HTML
         </li>
         <li>
           <svg className="home__skills-image">
-            <use href={`${icons}#icon-css`} />
+            <use href={`${icons}#css`} />
           </svg>
           CSS / SASS
         </li>
         <li>
           <svg className="home__skills-image">
-            <use href={`${icons}#icon-js`} />
+            <use href={`${icons}#js`} />
           </svg>
           JavaScript
         </li>
         <li>
           <svg className="home__skills-image">
-            <use href={`${icons}#icon-ts`} />
+            <use href={`${icons}#ts`} />
           </svg>
           TypeScript
         </li>
         <li>
           <svg className="home__skills-image">
-            <use href={`${icons}#icon-react`} />
+            <use href={`${icons}#react`} />
           </svg>
           React
         </li>
         <li>
           <svg className="home__skills-image">
-            <use href={`${icons}#icon-vite`} />
+            <use href={`${icons}#vite`} />
           </svg>
           Vite
         </li>
@@ -49,25 +49,25 @@ export default function HomeSkills() {
         {/* Backend / fullstack */}
         <li>
           <svg className="home__skills-image">
-            <use href={`${icons}#icon-sql`} />
+            <use href={`${icons}#sql`} />
           </svg>
           SQL
         </li>
         <li>
           <svg className="home__skills-image">
-            <use href={`${icons}#icon-postgresql`} />
+            <use href={`${icons}#postgresql`} />
           </svg>
           PostgreSQL
         </li>
         <li>
           <svg className="home__skills-image">
-            <use href={`${icons}#icon-supabase`} />
+            <use href={`${icons}#supabase`} />
           </svg>
           Supabase
         </li>
         <li>
           <svg className="home__skills-image">
-            <use href={`${icons}#icon-node.js`} />
+            <use href={`${icons}#node.js`} />
           </svg>
           Node.js
         </li>
@@ -75,7 +75,7 @@ export default function HomeSkills() {
         {/* Version control */}
         <li>
           <svg className="home__skills-image">
-            <use href={`${icons}#icon-git`} />
+            <use href={`${icons}#git`} />
           </svg>
           Git / Github
         </li>
@@ -83,7 +83,7 @@ export default function HomeSkills() {
         {/* Design */}
         <li>
           <svg className="home__skills-image">
-            <use href={`${icons}#icon-figma`} />
+            <use href={`${icons}#figma`} />
           </svg>
           Figma
         </li>

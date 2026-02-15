@@ -15,7 +15,7 @@ export default function ContactHero() {
               href="https://github.com/MikeL538"
               target="_blank"
             >
-              <svg className="contact__icon">
+              <svg className="contact__icon contact__icon--github">
                 <use href={`${icons}#icon-github`}></use>
               </svg>
               Github: https://github.com/MikeL538
@@ -27,34 +27,34 @@ export default function ContactHero() {
               href="https://github.com/MikeL538"
               target="_blank"
             >
-              <svg className="contact__icon">
-                <use href={`${icons}#icon-github`}></use>
+              <svg className="contact__icon contact__icon--linkedin">
+                <use href={`${icons}#icon-linkedin`}></use>
               </svg>
-              Github: https://github.com/MikeL538
+              Linkedin: https://www.linkedin.com/in/michal-lipiak/
             </a>
           </li>
           <li className="contact__list--item">
             <a
               className="contact__link"
-              href="https://github.com/MikeL538"
+              href="mailto: mikel538.work@gmail.com"
               target="_blank"
             >
-              <svg className="contact__icon">
-                <use href={`${icons}#icon-github`}></use>
+              <svg className="contact__icon contact__icon--email">
+                <use href={`${icons}#icon-envelope`}></use>
               </svg>
-              Github: https://github.com/MikeL538
+              E-mail: mikel538.work@gmail.com
             </a>
           </li>
           <li className="contact__list--item">
             <a
-              className="contact__link"
-              href="https://github.com/MikeL538"
+              className="contact__link contact__icon--smartphone"
+              href="tel: +48601598455"
               target="_blank"
             >
               <svg className="contact__icon">
-                <use href={`${icons}#icon-github`}></use>
+                <use href={`${icons}#icon-smartphone`}></use>
               </svg>
-              Github: https://github.com/MikeL538
+              Tel: (+48) 601 598 455
             </a>
           </li>
         </ul>

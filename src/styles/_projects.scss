@@ -45,12 +45,12 @@
     display: flex;
     gap: 25px;
     padding: 0 10px 10px 0;
-    justify-content: center;
   }
 
   &__image {
-    height: 300px;
-    width: 550px;
+    max-height: 300px;
+    max-width: 550px;
+    width: 100%;
     opacity: 0.9;
 
     border-top-left-radius: 16px;
@@ -87,16 +87,16 @@
 
   &__list-tech {
     display: flex;
-    gap: 15px;
+    gap: 8px;
     justify-content: end;
+    flex-wrap: wrap;
 
     > li {
-      border-radius: 10%;
-      padding: 3px;
       background: vars.$tech-bg;
       font-size: 1rem;
       font-weight: 600;
       border: 2px solid vars.$tech-border;
+      padding: 3px 5px;
     }
   }
 

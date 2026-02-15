@@ -40,11 +40,15 @@ export default function HomeProjects({
 
                 <ul className="home__projects__list-tech">
                   {project.tech.map((tech) => (
-                    // <li key={tech}>{tech}</li>
                     <li key={tech}>
-                      <svg className="home__skills-image">
-                        <use href={techIcons[tech]} />
-                      </svg>
+                      <div className="home__projects__icon-wrapper">
+                        <svg className="home__projects__icon-tech">
+                          <use href={techIcons[tech]} />
+                        </svg>
+                        <div className="home__projects__icon-tech--name">
+                          <p>{tech}</p>
+                        </div>
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -55,7 +59,7 @@ export default function HomeProjects({
                     href={project.live}
                   >
                     <svg className="home__projects__links-svg git-links">
-                      <use href={`${icons}#icon-www`} className="git-links" />
+                      <use href={`${icons}#www`} className="git-links" />
                     </svg>
                   </a>
                   <a
@@ -64,7 +68,7 @@ export default function HomeProjects({
                     href={project.github}
                   >
                     <svg className="home__projects__links-svg git-links">
-                      <use href={`${icons}#icon-github`} />
+                      <use href={`${icons}#github`} />
                     </svg>
                   </a>
                 </div>
