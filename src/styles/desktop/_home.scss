@@ -1,59 +1,63 @@
-@use "./variables" as vars;
+@use "../variables" as vars;
 
-.home__hero {
-  &__title {
-    margin-bottom: 45px;
-    font-size: clamp(2.6rem, 6vw, 4rem);
-    text-align: center;
-  }
-
-  &__container {
-    margin: 0 auto;
-    max-width: 1180px;
-    display: flex;
-  }
-
-  &-p {
-    margin: 25px;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-align: justify;
-  }
-
-  &__image {
-    max-width: 544px;
-    position: relative;
-    transition: vars.$transition-basic;
-
-    &:hover {
-      opacity: 0.1;
+.home {
+  margin: 0 auto;
+  &__hero {
+    &__title {
+      margin-bottom: 45px;
+      font-size: clamp(2.6rem, 6vw, 4rem);
+      text-align: center;
     }
 
-    &-wrapper {
-      height: 400px;
-      border-radius: 50%;
-      background: radial-gradient(
-        ellipse at center,
-        rgba(255, 255, 255, 0.24) 0%,
-        rgba(255, 255, 255, 0.22) 18%,
-        rgba(255, 255, 255, 0.18) 28%,
-        rgba(255, 255, 255, 0.1) 42%,
-        rgba(255, 255, 255, 0.05) 52%,
-        rgba(255, 255, 255, 0.025) 60%,
-        rgba(18, 21, 24, 0) 72%
-      );
+    &__container {
+      margin: 0 auto;
+      max-width: 1180px;
+      display: flex;
     }
-  }
 
-  &__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    &-p {
+      margin: 25px;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-align: justify;
+    }
 
-  &__button {
-    font-weight: 600;
-    color: vars.$text-primary;
+    &__image {
+      max-width: 544px;
+      position: relative;
+      transition: vars.$transition-basic;
+
+      &:hover {
+        opacity: 0.1;
+      }
+
+      &-wrapper {
+        height: 400px;
+
+        border-radius: 50%;
+        background: radial-gradient(
+          ellipse at center,
+          rgba(255, 255, 255, 0.24) 0%,
+          rgba(255, 255, 255, 0.22) 18%,
+          rgba(255, 255, 255, 0.18) 28%,
+          rgba(255, 255, 255, 0.1) 42%,
+          rgba(255, 255, 255, 0.05) 52%,
+          rgba(255, 255, 255, 0.025) 60%,
+          rgba(18, 21, 24, 0) 72%
+        );
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__button {
+      font-weight: 600;
+      color: vars.$text-primary;
+    }
   }
 }
 

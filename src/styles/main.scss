@@ -1,11 +1,26 @@
-@use "header";
-@use "footer";
-@use "home";
-@use "projects";
-@use "about";
-@use "imageModal";
-@use "contact";
 @use "./variables" as vars;
+// DESKTOP 1080
+@use "./desktop/header";
+@use "./desktop/footer";
+@use "./desktop/home";
+@use "./desktop/projects";
+@use "./desktop/about";
+@use "./desktop/imageModal";
+@use "./desktop/contact";
+// TABLET 768
+@use "./tablet/header768";
+@use "./tablet/home768";
+@use "./tablet/projects768";
+@use "./tablet/about768";
+@use "./tablet/imageModal768";
+// Mobile 320
+@use "./mobile/header320";
+@use "./mobile/footer320";
+@use "./mobile/home320";
+@use "./mobile/projects320";
+@use "./mobile/about320";
+@use "./mobile/imageModal320";
+@use "./mobile/contact320";
 
 * {
   box-sizing: border-box;
@@ -49,9 +64,6 @@ body {
   min-width: 320px;
   position: relative;
   background: vars.$bodyBackgroundGradient;
-  // min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 .layout {
@@ -62,7 +74,7 @@ body {
 }
 
 section {
-  padding: 140px 0 60px 0;
+  padding: 120px 0 60px 0;
 }
 
 h1 {
@@ -102,6 +114,7 @@ button:focus-visible {
   inset: 0;
   pointer-events: none;
   z-index: 100;
+  width: 100vw !important;
 
   background: radial-gradient(
     200px circle at var(--x) var(--y),

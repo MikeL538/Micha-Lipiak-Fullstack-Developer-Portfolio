@@ -1,4 +1,4 @@
-@use "./variables" as vars;
+@use "../variables" as vars;
 
 .header {
   position: fixed;
@@ -7,6 +7,8 @@
   // position: relative;
   z-index: 1;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 
   &__container {
     align-items: center;
@@ -15,7 +17,8 @@
     padding: 7px 40px;
     // position: relative;
     z-index: 2;
-    max-width: calc(1280px + 2rem);
+    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
   }
 
