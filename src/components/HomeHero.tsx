@@ -5,7 +5,7 @@ export default function HomeHero() {
   const { t } = useTranslation();
 
   return (
-    <div className="home__hero">
+    <section className="home__hero">
       <h1 className="home__hero__title">{t("home.heroTitle")}</h1>
       <div className="home__hero__container">
         <div className="home__hero__info">
@@ -29,6 +29,6 @@ export default function HomeHero() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

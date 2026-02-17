@@ -2,6 +2,13 @@
 
 @media screen and (((min-width: 768px) and (max-width: 1079px))) {
   .projects {
+    &__container {
+      margin: 0 auto;
+    }
+
+    &__item {
+      max-width: 644px;
+    }
     &__list-container {
       display: flex;
       flex-direction: column;
