@@ -13,7 +13,7 @@ export default function Header() {
         <div className="header__container">
           {/* Lewa strona: Pic / nazwa */}
           <div className="header__logo">
-            <img className="header__image" src="./" />
+            <img className="header__image" src="images/MLHeader.png" />
             <h3 className="header__name">Michał Lipiak</h3>
           </div>
           {/* Prawa strona: nawigacja */}

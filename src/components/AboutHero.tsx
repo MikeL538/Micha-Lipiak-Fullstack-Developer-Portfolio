@@ -5,6 +5,13 @@ export default function AboutHero() {
 
   return (
     <>
+      <div className="about__img--container">
+        <img className="about__img" src="images/ML.png" alt="photo" />
+        <div className="about__img--text">
+          <h3 className="about__img--name">Michał Lipiak</h3>
+          <h4 className="about__img--occ">{t("about.occ")}</h4>
+        </div>
+      </div>
       <div className="about__container">
         <h2 className="about__title">{t("about.title")}</h2>
         <p className="about__p">{t("about.p1")}</p>
@@ -54,13 +61,6 @@ export default function AboutHero() {
             </p>
           </li>
         </ul>
-      </div>
-      <div className="about__img--container">
-        <img className="about__img" src="./" alt="photo" />
-        <div className="about__img--text">
-          <h3 className="about__img--name">Michał Lipiak</h3>
-          <h4 className="about__img--occ">{t("about.occ")}</h4>
-        </div>
       </div>
     </>
   );

@@ -34,10 +34,11 @@
   &__image {
     height: 50px;
     margin-right: 5px;
-    background-color: black;
+    // margin-top: 5px;
+    background-color: none;
     width: 50px;
     border-radius: 100%;
-    border: 3px solid red;
+    // border: 3px solid red;
   }
 
   &__name {
