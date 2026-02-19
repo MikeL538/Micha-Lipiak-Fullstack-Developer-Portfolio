@@ -1,10 +1,11 @@
-# 🚀 Portfolio – Frontend / Fullstack Developer
+# 🚀 Portfolio – Fullstack Developer
 
 This repository contains my personal **developer portfolio**, showcasing selected projects and practical frontend skills.  
 The goal of this portfolio is to present **real applications**, clean UI, and a structured approach to building modern web apps.
 
 🔗 **Live version:**  
 👉 https://mikel538.github.io/Mikel-Fullstack-Developer-Portfolio/
+
 ---
 
 ## ✨ What you’ll find here
@@ -22,9 +23,14 @@ The goal of this portfolio is to present **real applications**, clean UI, and a 
 - React
 - TypeScript
 - Vite
-- React Router
-- SCSS / CSS
-- GitHub Pages
+- Hash Router
+- SCSS (BEM, mobile-first)
+- i18next (internationalization)
+- SVG sprites
+- JSON-driven content
+- Responsive design
+- Git & GitHub
+- GitHub Pages (deployment)
 
 ---
 

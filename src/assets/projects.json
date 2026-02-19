@@ -111,8 +111,8 @@
     "descriptionKey": "projects.flippingCard.description",
     "descriptionLongKey": "projects.flippingCard.descriptionLong",
     "tech": ["HTML", "CSS", "JavaScript", "CSS Animations"],
-    "image": "./images/projects/.webp",
-    "imageLarge": "./images/projects/Large.webp",
+    "image": "./images/projects/FlippingCard.webp",
+    "imageLarge": "./images/projects/FlippingCardLarge.webp",
     "github": "https://github.com/MikeL538/Flipping-card?tab=readme-ov-file",
     "live": "https://mikel538.github.io/Flipping-card/",
     "featured": false

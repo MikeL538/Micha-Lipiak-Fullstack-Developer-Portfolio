@@ -13,7 +13,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
 
   return (
     <>
-      <div id="cursor-light" />
+      {/* <div id="cursor-light" /> */}
 
       <div className="layout">
         <Header />

@@ -16,7 +16,6 @@ export default function Header() {
         document.documentElement.scrollHeight - window.innerHeight - 120;
 
       const isBottom = y >= max;
-      console.log("SCROLL TRIGGER", y);
       setIsScrolled(y > 80 && !isBottom);
     };
 
